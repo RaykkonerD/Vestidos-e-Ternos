@@ -1,0 +1,262 @@
+* {
+	font-family: open-sans;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: white;
+}
+
+.link {
+	-webkit-tap-highlight-color: transparent;
+	color: #e82727;;
+	font-size: 14px;
+}
+
+main {
+	font-size: 15px;
+  font-family: open-sans;
+}
+
+.conteudo {
+	margin-bottom: 100px;
+}
+
+/* Do cabeçalho */
+
+.header {
+	display: flex;
+	border-bottom: 1px solid #e82727;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 30px;
+}
+
+.logo {
+	height: 35px;
+	margin-top: 3px;
+}
+
+.contatosDiv {
+	position: absolute;
+	right: 50px;
+	top: 50px;
+	display: flex;
+	flex-direction: column;
+	background: white;
+	
+}
+
+.contatosDiv span {
+	border: 0.5px solid #e82727;
+	padding: 5px 10px;
+	display: flex;
+	font-size: 12px;
+	color: #e82727;
+	align-items: center;
+}
+
+/* Da imagem abaixo do cabeçalho */
+
+.capaImg {
+	height: 120px;
+}
+
+.capaDiv {
+	display: flex;
+	background: #eee;
+	margin-top: 5%;
+	width: 100%;
+	justify-content: center;
+}
+
+/* Do filtro de pesquisa */
+
+.filtro {
+	margin: 50px 20px;
+	color: #e82727;
+}
+
+.selectDiv {
+	display: inline;
+}
+
+.selectTitle {
+	display: none;
+}
+
+.selects {
+	border: none;
+	background: none;
+	margin-left: 10px;
+  color: #e82727;
+	outline: none;
+}
+
+/* Da seção de produtos */
+
+section {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 50px;
+	overflow-x: scroll;
+	padding-right: 20px;
+}
+
+.secaoTitulo {
+	display: block;
+	margin-left: 20px;
+  color: #e82727;
+}
+
+.secaoFavoritos {
+	overflow-x: hidden;
+	flex-wrap: wrap;
+}
+
+.prodFigure {
+  margin-left: 20px;
+	margin-right: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.prodImgDiv {
+	height: 145px;
+	background: #eee;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.prodImg {
+	width: 120px;
+	max-width: 150px;
+	border-radius: 10px;
+}
+
+.prodFigcaption {
+	display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	margin-top: 5px;
+}
+
+.prodInfo {
+	font-size: 11px;
+}
+
+.prodTitulo {
+	display: block;
+}
+
+.prodTamanho {
+	display: block;
+	font-size: 10px;
+	margin: 3px 0;
+}
+
+.prodValor {
+	font-weight: 510;
+	font-size: 13px;
+}
+
+.prodIconsDiv {
+	display: inline-flex;
+  flex-direction: column;
+  height: inherit;
+	justify-content: space-between;
+	padding: 3px;
+}
+
+.prodFigureCurto {
+	width: 90px;
+	height: 90px;
+  margin-left: 20px;
+	margin-right: 0;
+}
+
+.prodImgDivCurto {
+	width: 90px;
+	height: 90px;
+}
+
+.prodImgCurto {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 10px;
+}
+
+.prodFigcaptionCurto {
+	display: flex;
+	margin-top: -90px;
+  flex-direction: row;
+	justify-content: space-between;
+	padding: 3px 5px;
+}
+
+.prodMais {
+	width: inherit;
+  height: inherit;
+	position: absolute;
+	border-radius: 10px;
+  background: rgb(255, 0, 0, 0.5);
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+}
+
+/* Do modal dos produtos */
+
+.prodDetalhes {
+	position: absolute;
+	display: flex;
+	
+}
+
+/* Do footer */
+
+footer {
+	width: 100%;
+	background: #e82727;
+	color: #e8a0a0;
+	display: block;
+	text-align: center;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+.superiorDiv{
+}
+
+.inferiorDiv {
+	display: flex;
+	justify-content: space-around;
+	padding: 3% 5%;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.inferior {
+	margin: 0 4%;
+}
+
+.divisoria {
+	width: 80%;
+	height: 2px;
+	background: #ccc;
+}
+
+.btInvisivel {
+	background: none;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+}

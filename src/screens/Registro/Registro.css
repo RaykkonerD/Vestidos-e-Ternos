@@ -1,0 +1,66 @@
+.registroForm {
+	margin: 10% 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	width: 70%;
+}
+
+.registroTitulo {
+	margin-bottom: 30px;
+	color: #e82727;
+}
+
+.registroInputs {
+	width: 80%;
+	border: .5px solid #e82727;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	outline: none;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.registroInputSenhaDiv {
+	width: 80%;
+	border: .5px solid #e82727;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	outline: none;
+	display: flex;
+  justify-content: space-between;
+	box-sizing: border-box;
+	align-items: center;
+}
+
+.registroInputs::placeholder, .registroInputSenha::placeholder {
+	color: #c29393;
+}
+
+.registroInputSenha {
+	outline: none;
+	display: inline;
+	width: 70%;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.eyeIcon {
+	margin-right: 10px;
+}
+
+.botaoRegistrar {
+	margin-top: 30px;
+	width: 50%;
+	background: #e82727;
+	color: white;
+	border: none;
+	outline: none;
+	padding: 5px;
+	border-radius: 5px;
+}

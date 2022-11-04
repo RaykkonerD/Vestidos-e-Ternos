@@ -1,0 +1,29 @@
+.conteudoFavoritos {
+	min-height: 80%;
+	margin-bottom: 100px;
+}
+
+.spanFavoritos {  
+  margin-top: 20px;
+	padding: 0 20px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.tituloFavoritos {
+	background: #e82727;
+  color: white;
+	padding: 2px 5px;
+	display: inline-flex;
+}
+
+.produtosDiv {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	overflow-x: hidden;
+	flex-wrap: wrap;
+}
+
