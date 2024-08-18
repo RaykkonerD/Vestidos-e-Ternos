@@ -6,8 +6,8 @@ export default function p404(){
 	return (
 		<div>
 			<Cabecalho  />
-			<div style={{display: "flex", justifyContent: 'center', lineHeight:'3'}}>
-			<img src={image} style={{height:'20em',}} />
+			<div style={{display: "flex", padding:'25vh 0', alignItems: 'center', justifyContent: 'center',}}>
+				<img src={image} style={{height:'20em',}} />
 			</div>
 		</div>
 	)

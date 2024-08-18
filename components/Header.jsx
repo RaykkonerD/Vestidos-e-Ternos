@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import '../src/App.css';
 import { IonIcon } from '@ionic/react';
 import { logoWhatsapp, logoInstagram } from 'ionicons/icons';
@@ -8,16 +8,17 @@ import CalendarIcon from '../public/icons/CalendarIcon';
 import PhoneIcon from '../public/icons/PhoneIcon';
 import ProfileIcon from '../public/icons/ProfileIcon';
 import Logo from '../public/imgs/logo.png';
+import { AuthContext } from '../src/contexts/auth';
 import { Link } from 'react-router-dom';
 let display = true;
 
 export default function Header(pagina){
   const [verContatos, setVerContatos] = useState();
-
+  const { cliente, logado } = useContext(AuthContext);
 	
 	return (
 		<header className="header">
-			<img src={Logo} className="logo" />
+			<Link to='/'><img src={Logo} className="logo" /></Link>
 			<span style={styles.iconsDiv}>
 			<Link to='/' className="link">
 			  <HomeIcon tamanho={15}  estilo={styles.icons}/>
@@ -31,7 +32,7 @@ export default function Header(pagina){
 				<Link className="link" onClick={() => setVerContatos(!verContatos)}>
 			<PhoneIcon tamanho={15}  estilo={styles.icons}/>
 				</Link>
-			<Link to="/login" className="link">
+			<Link to={logado ? "/perfil" : "/login"} className="link">
 			<ProfileIcon tamanho={15}  estilo={styles.icons}/>
 			</Link>
 			</span>
@@ -43,7 +44,7 @@ export default function Header(pagina){
 					<a className="link" href="https://wa.link/fkx2rk">
 				<span>
 					<IonIcon icon={logoWhatsapp} style={styles.ion}/>
-					(83) 8898-8927
+					(83) 98898-8927
 				</span>
 						</a>
 					<a className="link" href="https://www.instagram.com/vestidoseternos/">

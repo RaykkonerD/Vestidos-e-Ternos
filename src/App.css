@@ -1,5 +1,5 @@
 * {
-	font-family: open-sans;
+	font-family: sans-serif;
 }
 
 body {
@@ -10,17 +10,25 @@ body {
 
 .link {
 	-webkit-tap-highlight-color: transparent;
-	color: #e82727;;
+	color: #e82727;
 	font-size: 14px;
 }
 
 main {
 	font-size: 15px;
-  font-family: open-sans;
+  font-family: open-sans;	
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.conteudoAcima {
+	min-height: 90vh;
 }
 
 .conteudo {
-	margin-bottom: 100px;
+	margin-bottom: 25px;
 }
 
 /* Do cabeçalho */
@@ -41,11 +49,10 @@ main {
 .contatosDiv {
 	position: absolute;
 	right: 50px;
-	top: 50px;
+	top: 52.5px;
 	display: flex;
 	flex-direction: column;
 	background: white;
-	
 }
 
 .contatosDiv span {
@@ -120,6 +127,7 @@ section {
 	margin-right: 0;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .prodImgDiv {
@@ -177,14 +185,9 @@ section {
 	margin-right: 0;
 }
 
-.prodImgDivCurto {
+.prodImgCurto {
 	width: 90px;
 	height: 90px;
-}
-
-.prodImgCurto {
-	width: inherit;
-	height: inherit;
 	object-fit: cover;
 	object-position: top;
 	border-radius: 10px;
@@ -216,8 +219,8 @@ section {
 .prodDetalhes {
 	position: absolute;
 	display: flex;
-	
 }
+
 
 /* Do footer */
 

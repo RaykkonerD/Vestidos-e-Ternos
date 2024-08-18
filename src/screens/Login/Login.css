@@ -1,3 +1,7 @@
+.loginCorpo {
+	
+}
+
 .loginForm {
 	margin: 10% 20%;
 	display: flex;
@@ -10,14 +14,14 @@
 }
 
 .loginTitulo {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	color: #e82727;
 }
 
 .loginInputs {
 	width: 70%;
 	border: .5px solid #e82727;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	border-radius: 5px;
 	box-sizing: border-box;
 	display: flex;
@@ -26,7 +30,7 @@
 .loginInputSenhaDiv {
 	width: 70%;
 	border: .5px solid #e82727;
-	margin-bottom: 20px;
+	margin-top: 20px;
 	border-radius: 5px;
 	display: flex;
   justify-content: space-between;
@@ -37,10 +41,11 @@
 .loginInputNome, .loginInputSenha {
 	outline: none;
 	padding: 5px;
+	color: #8f0000;
 }
 
 .loginInputNome::placeholder, .loginInputSenha::placeholder {
-	color: #c29393;
+	color: #360101;
 }
 
 .loginInputSenha {
@@ -51,6 +56,14 @@
 }
 
 .eyeIcon {
+	display: flex;
+}
+
+.mensagemCampoObrigatorio {
+	font-size: 10px;
+	color: orange;
+	margin-top: 3px;
+	
 }
 
 .botaoEntrar {
@@ -65,5 +78,35 @@
 }
 
 .registrarLink {
+	margin-top: 10px;
 	margin-left: 50%;
+}
+
+.mensagemDeAlertaSucesso {
+	bottom: 20px;
+	border: 1.5px solid #30ab30;
+	border-radius: 6px;
+	background: #baffba;
+	color: #30ab30;
+	padding: 8px;
+	max-width: 70%;
+	margin: 10px 0;
+	fontSize: 0.2em;
+}
+
+.mensagemDeAlertaErro {
+	bottom: 20px;
+	border: 1.5px solid #d13b3b;
+	border-radius: 6px;
+	background: #ffbaba;
+	color: #d13b3b;
+	padding: 8px;
+	max-width: 70%;
+	margin: 10px 0;
+	fontSize: 0.2em;
+}
+
+.disabledDiv {
+	display: none;
+	
 }

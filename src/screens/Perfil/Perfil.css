@@ -1,0 +1,61 @@
+.conteudoPerfil {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 25vh 20%;
+	align-items: center;
+}
+
+.imgNomeDiv {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: #5e1010;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.imagemUsuario {
+	height: 90px;
+	width: 90px;
+	align-self: center;
+	object-fit: cover;
+	object-position: top;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.botoesPerfil {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-width: 150px;
+}
+
+.botoesPerfilInferiores {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.botaoPerfil {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #e82727;
+	padding: 5%;
+	margin-bottom: 5px;
+}
+
+.botaoPerfil:active {
+	background: #fff0f0;
+}
+
+.botaoPerfilFavoritos {
+	margin-right: 5px;
+}
+
+.botaoPerfilFavoritos, 
+.botaoPerfilCalendar {
+  width: 100%;
+}

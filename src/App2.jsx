@@ -2,7 +2,6 @@ import react, {useState, useEffect} from 'react';
 import axios from "axios";
 import API from './api/api';
 import envVars from './envVars';
-import Prods from '../db/testProd';
 import './App.css';
 import Loader from './screens/Loading';
 import ReactLoading from 'react-loading';
@@ -49,7 +48,6 @@ export default function App(){
 				{/*<p>atributos: {JSON.stringify(c.attributes)}</p>*/}
 			</div>
 			)}
-					<Prods ent="produtos" id={7}/>
 					</div>
 			}
 		</div>

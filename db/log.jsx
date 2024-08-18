@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import axios from "axios";
+import API from "../src/api/api";
 import envVars from '../src/envVars';
 
-function clientes(){
-	return [{}, {
+ const cliente =  {
 		id: 1,
 		attributes: {
 			nome: 'alfabeto',
@@ -32,11 +31,9 @@ function clientes(){
 					}
 				}
 			}
-		}
-	}];
-}
+	}
+};
 
-const cliente = clientes()[1];
 const ClienteLogado = {
   id: cliente.id,
 	nome: cliente.attributes.nome,
